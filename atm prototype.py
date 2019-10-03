@@ -49,8 +49,8 @@ def mail(msg):
         server = smtplib.SMTP('smtp.gmail.com', 587)
         server.ehlo()
         server.starttls()
-        server.login("anmolwadali1998@gmail.com", "anmolwadali41")
-        server.sendmail("anmolwadali1998@gmail.com", "anmolwadali1998@gmail.com", msg)
+        server.login("sender id ", "enter password")
+        server.sendmail("sender id", "reciever id", msg)
         server.quit()
 def check():
     p.confirm(text='YOU CURRENT BALANCE IS '+str(bal),title='BALANCE STATUS',buttons=['OKAY'])
